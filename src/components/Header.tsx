@@ -1,7 +1,6 @@
 'use client'
 import { HomeIcon, File, UserRound, Ticket } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import NavButton from '@/components/NavButton';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap/all';
@@ -31,7 +30,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className='flex items-center'>
-                    <NavButton href='/ticket' label='Ticket' icon={Ticket} />
+                    <NavButton href='/tickets' label='Ticket' icon={Ticket} />
                     <NavButton href='/customers' label='Customers' icon={UserRound} />
                     <ModeToggle />
                 </div>

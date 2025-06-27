@@ -1,19 +1,15 @@
-'use client'
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap/all"
 
+
+import CustomerContent from "@/components/customers/CustomerContent"
+
+
+export const metadata = {
+    title: "Customers",
+    description: "Customers page",
+}
 export default function Customer() {
-    useGSAP(() => {
-        gsap.fromTo('#customers', {
-            opacity: 0,
 
-        }, {
-            opacity: 1,
-            duration: 1,
-            ease: 'power1.out'
-        })
-    }, [])
     return (
-        <h2 id="customers">Customer page</h2>
+        <CustomerContent />
     )
 }
